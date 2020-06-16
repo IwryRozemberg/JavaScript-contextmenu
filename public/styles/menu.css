@@ -1,0 +1,55 @@
+#menu-popup {
+    width: 200px;
+    padding: 0;
+    z-index: 10;
+    position: absolute;
+    font: normal 20pt Calibri;
+    border: 1px dotted blue;
+    background: rgba(133, 192, 242, 0.7);
+    box-shadow: 2px 2px 2px black;
+    visibility: hidden;
+}
+
+#menu-popup--active {
+    visibility: visible;
+}
+
+#menu-popup ul {
+    list-style-type: none;
+    padding-left: 10px;
+    line-height: 50px;
+    /* text-align: center; */
+}
+
+#menu-popup ul li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#menu-popup ul li:nth-child(-n+2) {
+    border-bottom: 1px dotted;
+}
+
+#menu-popup ul li:hover {
+    background-color: rgba(133, 192, 242, 0.8);
+}
+
+#menu-popup ul li span {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: flex;
+}
+
+#menu-popup ul li span#clipboard {
+    background: url("../assets/cil-clipboard.svg") no-repeat;
+}
+
+#menu-popup ul li span#copy {
+    background: url("../assets/cil-copy.svg") no-repeat;
+}
+
+#menu-popup ul li span#cut {
+    background: url("../assets/cil-cut.svg") no-repeat;
+}
